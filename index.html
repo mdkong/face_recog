@@ -7,9 +7,9 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.80.0">
-  <title>Opencv.js 안면 인식</title>
+  <title>AI를 이용한 실시간 사람찾기 앱</title>
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+  <link rel="Happygiver Inc." href="http://happygiver.com">
 
 
 
@@ -42,7 +42,7 @@
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white">About</h4>
-            <p class="text-muted">Opencv.js 실시간 AI 안면 인식</p>
+            <p class="text-muted">AI를 이용한 실시간 사람찾기 앱    </p>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">실시간 AI 안면 인식</h1>
+          <h1 class="fw-light">AI을 이용한 실시간 사람찾기 앱</h1>
           <p class="lead text-muted" id="status">OpenCV.js is loading...</p>
           <div class="spinner-border text-primary" role="status" id="loader">
             <span class="sr-only"></span>
@@ -97,6 +97,9 @@
                   <button id="addPersonButton" type="button" disabled="true" class="btn btn-sm btn-outline-secondary">사람
                     추가</button>
                 </div>
+
+                <input type=button value="앱 종료" onclick="self.close()">
+
               </div>
             </div>
           </div>
@@ -156,7 +159,7 @@
     //! [Recognize]
     function recognize(face) {
       var vec = face2vec(face);
-      var bestMatchName = 'unknown';
+      var bestMatchName = '잘 모르겠음';
       var bestMatchScore = 0.5;  // Actually, the minimum is -1 but we use it as a threshold.
       for (name in persons) {
         var personVec = persons[name];
@@ -181,9 +184,9 @@
       var recognModel = 'data/openface.nn4.small2.v1.t7';
       
       utils.createFileFromUrl('face_detector.prototxt', proto, () => {
-        document.getElementById('status').innerHTML = 'Downloading face_detector.caffemodel';
+        document.getElementById('status').innerHTML = 'Model 다운로드 중 (face_detector.caffemodel)';
         utils.createFileFromUrl('face_detector.caffemodel', weights, () => {
-          document.getElementById('status').innerHTML = 'Downloading OpenFace model';
+          document.getElementById('status').innerHTML = 'Model 다운로드 중 (OpenFace model)';
           utils.createFileFromUrl('face_recognition.t7', recognModel, () => {
             document.getElementById('status').innerHTML = '';
             netDet = cv.readNetFromCaffe('face_detector.prototxt', 'face_detector.caffemodel');
@@ -224,7 +227,7 @@
         if (rects.length > 0) {
           var face = frameBGR.roi(rects[0]);
 
-          var name = prompt('이름을 알려주세요:');
+          var name = prompt('당신의 이름을 알려주세요:');
           var cell = document.getElementById("targetNames").insertCell(0);
           cell.innerHTML = name;
 
@@ -287,6 +290,7 @@
 
   <script src="js/utils.js" type="text/javascript"></script>
   <script async src="js/opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+
 
 </body>
 
