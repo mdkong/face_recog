@@ -1,0 +1,22 @@
+{
+  "name": "face_recognition_w_opencvjs",
+  "version": "1.0.0",
+  "description": "test_pkg",
+  "main": "hello.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdkong/face_recognition_w_opencvjs.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "md.kong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdkong/face_recognition_w_opencvjs/issues"
+  },
+  "homepage": "https://github.com/mdkong/face_recognition_w_opencvjs#readme"
+}
