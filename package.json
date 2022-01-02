@@ -13,6 +13,11 @@
   "keywords": [
     "test"
   ],
+
+  "publishConfig": {
+    "@mdkong:registry": "https://npm.pkg.github.com"
+  },
+  
   "author": "md.kong",
   "license": "ISC",
   "bugs": {
