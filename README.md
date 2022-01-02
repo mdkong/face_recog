@@ -20,6 +20,7 @@
   - Web-based AI Face Recognition Program(WebApp)
 - Pre-Alpha Release through Build, Test and Deployment Automation by MD.Kong.
 
+
 # 프로젝트 개요
 
 - AI 기술(얼굴 인식 딥러닝 모델)을 활용하여
@@ -33,6 +34,7 @@
   - OpenCV, JavaScript
 - Bootstrap5,  [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.html) , Github, gh-pages 등을 이용하여 반응형 웹앱 개발로 변경
   - OpenCV.js: Webpage, Image Processing, Object Detection, DNN Module etc.
+  - All-in-One Github (No need of npm publish w/ npm Registry, etc.)
 
 # 프로젝트 상세 설명
 
@@ -70,7 +72,13 @@ WAIFRP 개발에 사용된 자원들의 상세한 설명은 아래 링크된 사
   - tensorflow.js model
 
 - 안드로이드 플랫폼에서의 패키징 처리하여 앱 배포 구현 (플레이스토어에 배포)
-- 3D 기능 구현한 라이브러리 (WebAR, WebVR 등) 활용한 앱 개발
+- 3D 기능 구현한 라이브러리 (WebAR, WebVR 등) 활용한 앱 개발  
+  
 
->
+
+---  
 > 감사합니다
+> 
+> Many Thanks to @Github from the bottom of my heart
+---
+
