@@ -8,7 +8,7 @@
 ├── 발표 순서
 │   ├── 프로젝트 개요 및 개발 배경
 │   └── 프로젝트 소개
-│       ├── 프로그램 설명
+│       ├── 프로젝트 상세 설명
 │       └── 시연 (Demonstration)
 ├── 개선 및  보완 사항
 └── Q&A
@@ -40,7 +40,7 @@
   - All-in-One Github (No need of npm publish w/ npm Registry, etc.)
 
 # 프로젝트 상세 설명 🕵️
-
+## 프로그램 개요 📈
 - AI 기술(얼굴 인식 머신러닝 모델)을 활용하여
   - weights: caffemodel (res10_300x300_ssd_iter_140000_fp16.caffemodel)
   - Recognition Model: openface.nn4.small2.v1.t7
@@ -50,7 +50,7 @@
   - Bootstrap5 (화면 개발)
   - OpenCV.js (Face Recognition algorithm, Porting to Bootstrap)
 
-# 개발에 사용된 자원들 (💠🔶Resources)
+## 개발에 사용된 자원들 (💠🔶Resources)
 
 WAIFRP 개발에 사용된 자원들의 상세한 설명은 아래 링크된 사이트 참조
 
@@ -62,11 +62,27 @@ WAIFRP 개발에 사용된 자원들의 상세한 설명은 아래 링크된 사
 | Colab | IDE | [https://colab.research.google.com/] |
 | Google Drive | DB | [https://www.google.com/drive/] |
 
-# 프로그램 소개 📈
 
-- 아래 코드 참조
+## 코드 참조
   - <https://github.com/mdkong/cv_face_recog/blob/main/index.html>
-- 프로그램 실행 데모
+
+## 작업 폴더 목록
+
+~~~
+D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
++---.github
+|   \---workflows
++---assets
+|   +---brand
+|   \---dist
+|       +---css
+|       \---js
++---data
+\---js
+~~~
+
+
+## 프로그램 실행 데모
   - <https://mdkong.github.io/cv_face_recog/>
 
 # 추후 보완 내용 🛠️ 👷
