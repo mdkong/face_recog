@@ -1,5 +1,4 @@
 <h1 align="center">Project Intro</h1>  
-  
 
 # 발표 순서 🥇🥈🥉
 
