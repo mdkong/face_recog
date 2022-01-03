@@ -1,4 +1,5 @@
-<h1 align="center">Project Intro</h1>
+<h1 align="center">Project Intro</h1>  
+  
 
 # 발표 순서 🥇🥈🥉
 
@@ -57,7 +58,7 @@
 | :------: | ------ |------ |
 | 1 | Face Detection | 이미지에서 한 개 이상의 얼굴을 검출. BGR 이미지를 입력 받고, 얼굴이라고 생각할 수 있는 부분에  네모 박스를 그린다.  confidence를 잘 선택해야 한다. 값이 커질 수록 얼굴 아닌 다른 대상이 포함 될 가능성이 높아지고, 작아지면 얼굴 선택이 안 될 수도 있다 |
 | 2 | Feature extraction | 얼굴 이미지에서 가장 중요한 특징들을 추출.  SSD framework (Single Shot MultiBox Detector)에 기초한  reduced ResNet-10 model 사용|
-| 3 | Face classification | 추출된 특징들에 기초하여 얼굴 분류. 이 네트워크는 OpenFace라고 불린다.  96 x 96 사이즈의 RGB 얼굴 이미지를 입력받아 128차원의 단위 벡터를 리턴하며 이는 단위 다차원공간에서의 한 점으로 표기한다.  이로써 두 얼굴사이의 차이는 두 출력벡터들 사이의 각도가 된다 |
+| 3 | Face classification | 추출된 특징들에 기초하여 얼굴 분류. 이 네트워크는 OpenFace라고 불린다.  96 x 96 사이즈의 RGB 얼굴 이미지를 입력받아 128차원의 단위 벡터를 리턴하며 이는 단위 다차원공간에서의 한 점으로 표기한다.  이로써 두 얼굴사이의 차이는 두 출력벡터들 사이의 거리로 판단할 수 있다([Triplet Loss Function](https://tech.kakaoenterprise.com/63)) |
 
   - weights: caffemodel.SSD
 [res10_300x300_ssd_iter_140000_fp16.caffemodel](https://medium.com/acm-juit/ssd-object-detection-in-real-time-deep-learning-and-caffe-f41e40eea968)
