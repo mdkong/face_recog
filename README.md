@@ -59,9 +59,13 @@
 | 2 | Feature extraction | 얼굴 이미지에서 가장 중요한 특징들을 추출.  SSD framework (Single Shot MultiBox Detector)에 기초한  reduced ResNet-10 model 사용|
 | 3 | Face classification | 추출된 특징들에 기초하여 얼굴 분류. 이 네트워크는 OpenFace라고 불린다.  96 x 96 사이즈의 RGB 얼굴 이미지를 입력받아 128차원의 단위 벡터를 리턴하며 이는 단위 다차원공간에서의 한 점으로 표기한다.  이로써 두 얼굴사이의 차이는 투 출력벡터들 사이의 각도가 된다 |
 
-  - weights: caffemodel (res10_300x300_ssd_iter_140000_fp16.caffemodel)
-  - Recognition Model: openface.nn4.small2.v1.t7
-  - Config: deploy_lowres.prototxt
+  - weights: caffemodel.SSD
+[res10_300x300_ssd_iter_140000_fp16.caffemodel](https://medium.com/acm-juit/ssd-object-detection-in-real-time-deep-learning-and-caffe-f41e40eea968)
+
+  - Config: [deploy_lowres.prototxt](https://fileinfo.com/extension/caffemodel)
+ 
+  - Recognition Model: [openface.nn4.small2.v1.t7](https://cmusatyalab.github.io/openface/#overview)
+
 
 
 
@@ -111,8 +115,9 @@ D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
 
 
 ---  
-> 감사합니다 💚
-> 
-> Many Thanks to #Github from the bottom of my heart
+
+감사합니다 💚
+
+Many Thanks to @github & all the Open Source Maintainers from the bottom of my heart 👍👏
 ---
 
