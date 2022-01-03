@@ -18,18 +18,19 @@
 
 - ## Project Title: AI 기술을 활용한 얼굴인식 프로그램(웹앱) 개발
 
-- ## Program Name: WAIFRP
+  - ## Program Name: WAIFRP
 
   - Web-based AI Face Recognition Program(WebApp)
--     Pre-Alpha Release through Build, Test and Deployment Automation by MD.Kong
+  -     Pre-Alpha Release through Build, Test and Deployment Automation by MD.Kong
 
 
 # 프로젝트 개요 2️⃣
 
-- AI 기술(얼굴 인식 딥러닝 모델)을 활용하여
-- 웹에서 실시간으로 카메라 영상을 입력받아 저장 후 (화면 개발)
-- 입력되는 카메라 영상속 인물들 중에서 일치하는 사람을 구별해 낸다
-  - Verification (검증) & Identification (식별)
+- AI 기술(얼굴 인식 딥러닝 모델)을 이용하여
+- 웹에서 실시간으로 카메라 영상을 입력받아 그 중에서 사람의 얼굴 부분을 추출 및 저장하고 
+ 
+- 기준(anchor)이 되는 얼굴과 일치할 가능성이 높은 얼굴을 구별해 낸다
+  - Identification (식별) vs Verification (검증)
 
 # 프로젝트 개발 배경 3️⃣
 
@@ -112,6 +113,6 @@ D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
 ---  
 > 감사합니다 💚
 > 
-> Many Thanks to @Github from the bottom of my heart
+> Many Thanks to #Github from the bottom of my heart
 ---
 
