@@ -40,6 +40,16 @@
   - All-in-One Github (No need of npm publish w/ npm Registry, etc.)
 
 # 프로젝트 상세 설명 🕵️
+
+![Face recognition pipeline](https://user-images.githubusercontent.com/77907363/147905111-5c272a23-a312-49c0-9871-e4ccacea8e28.png)
+
+| Step | Process | Comments |
+| ------ | ------ |------ |
+| 1 | Face Detection | 이미지에서 한 개 이상의 얼굴을 검출 |
+| 2 | Feature extraction | 얼굴 이미지에서 가장 중요한 특징들을 추출 |
+| 3 | Face classification | 추출된 특징들에 기초하여 얼굴 분류 |
+
+
 ## 프로그램 개요 📈
 - AI 기술(얼굴 인식 머신러닝 모델)을 활용하여
   - weights: caffemodel (res10_300x300_ssd_iter_140000_fp16.caffemodel)
