@@ -26,11 +26,10 @@
 
 # 프로젝트 개요 2️⃣
 
-- AI 기술(얼굴 인식 딥러닝 모델)을 이용하여
-- 웹에서 실시간으로 카메라 영상을 입력받아 그 중에서 사람의 얼굴 부분을 추출 및 저장하고 
- 
-- 기준(anchor)이 되는 얼굴과 일치할 가능성이 높은 얼굴을 구별해 낸다
-  - Identification (식별) vs Verification (검증)
+- OpenCV.js로 ML 모델 빌드
+
+- ML 모델을 웹브라우저로 배포
+  - 자바스크립트를 실행할 수 있는 모든 곳에서 기존 모델 실행
 
 # 프로젝트 개발 배경 3️⃣
 
@@ -41,13 +40,6 @@
   - All-in-One Github (No need of npm publish w/ npm Registry, etc.)
 
 # 프로젝트 상세 설명 🕵️
-
-## 프로그램 개요 📈
-- AI 기술(얼굴 인식 머신러닝 모델)을 활용하여
-- 웹에서 실시간으로 카메라 영상을 입력받아 저장 후
-- 입력되는 카메라 영상속 objects 중에서 사람얼굴을 구별해 내고 그 중에서 일치하는 사람을 구별해 낸다
-  - Bootstrap5 (화면 개발)
-  - OpenCV.js (Face Recognition algorithm, Porting to Bootstrap)
 
 ## Face Recognition Pipeline
 ![Face recognition pipeline](https://user-images.githubusercontent.com/77907363/147905111-5c272a23-a312-49c0-9871-e4ccacea8e28.png)
@@ -66,7 +58,15 @@
  
   - Recognition Model: [openface.nn4.small2.v1.t7](https://cmusatyalab.github.io/openface/#overview)
 
-
+## 코딩 요구사항 📈
+- AI 기술(얼굴 인식 딥러닝 모델)을 이용하여
+  - DNN 모델 선정 및 준비 (Caffemodel, OpenFace etc.)
+  
+- 웹에서 실시간으로 카메라 영상을 입력받아 그 중에서 사람의 얼굴 부분을 추출 및 저장하고 
+  - Object Detection, Feature map 생성
+ 
+- 기준(anchor)이 되는 얼굴과 일치할 가능성이 높은 얼굴을 구별해 낸다
+  - Identification (식별), Verification (검증)
 
 
 ## 개발에 사용된 자원들 (💠🔶Resources)
@@ -75,7 +75,7 @@
 | ------ | ------ |------ |
 | Bootstrap | 페이지 작성 | [https://getbootstrap.com/docs/5.0/getting-started/introduction/] |
 | OpenCV.js | 핵심 기능 모듈 | [https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.html] |
-| GitHub | SCM & 웹호스팅 | [https://github.com/mdkong/face_recognition_w_opencvjs#readme] |
+| GitHub | Registry, 웹호스팅 & 배포 | [https://github.com/mdkong/face_recognition_w_opencvjs#readme] |
 | Colab | IDE | [https://colab.research.google.com/] |
 | Google Drive | DB | [https://www.google.com/drive/] |
 
@@ -107,7 +107,7 @@ D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
 - 다양한 모델 및 파라메터를 변경하면서 테스트 해 볼 필요
   - tensorflow.js model, YOLO etc.
   
-- 다양한 기능을 포함한 화면 구성
+- 다양한 기능을 포함한 Interface 개선 및 화면 구성
 
 - 안드로이드 플랫폼에서의 패키징 처리 및 배포 (플레이스토어에 배포)
 - 3D 기능 구현한 라이브러리 (WebAR, WebVR 등) 활용한 앱 개발  
