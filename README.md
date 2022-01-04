@@ -1,4 +1,4 @@
-<h1 align="center">Project Intro</h1>  
+<h1 align="center">Project PT & Demo</h1>  
 
 # 발표 순서 🥇🥈🥉
 
@@ -21,7 +21,7 @@
   - ## Program Name: WAIFRP
 
   - Web-based AI Face Recognition Program(WebApp)
-  -     Pre-Alpha Release through Build, Test and Deployment Automation by MD.Kong
+  - *Pre-Alpha Release through Build, Test and Deployment Automation by MD.Kong*
 
 
 # 프로젝트 개요 2️⃣
