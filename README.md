@@ -14,9 +14,9 @@
 └── Q&A
 ```
 
-# 프로젝트 개요 1️⃣
+# 프로젝트 개요 - Goal  1️⃣
 
-- ## Project Title: AI 기술을 활용한 얼굴인식 프로그램(웹앱) 개발
+- ## Project Title: AI 기술을 이용한 얼굴인식 프로그램(웹앱) 개발
 
   - ## Program Name: WAIFRP
 
@@ -24,7 +24,7 @@
   - *Pre-Alpha Release through Build, Test and Deployment Automation by MD.Kong*
 
 
-# 프로젝트 개요 2️⃣
+# 프로젝트 개요 - Objectives 2️⃣
 
 - OpenCV.js로 ML 모델 빌드
 
@@ -37,7 +37,7 @@
   - OpenCV, JavaScript
 - Bootstrap5,  [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.html) , Github, gh-pages 등을 이용하여 반응형 웹앱 개발로 변경
   - OpenCV.js: Webpage, Image Processing, Object Detection, DNN Module etc.
-  - All-in-One Github (No need of npm publish w/ npm Registry, etc.)
+  - All-in-One Github (No need of NPM,Registry, Firebase etc.)
 
 # 프로젝트 상세 설명 🕵️
 
