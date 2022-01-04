@@ -1,4 +1,5 @@
 <h1 align="center">Project PT & Demo</h1>  
+<br /> 
 
 # 발표 순서 🥇🥈🥉
 
@@ -13,6 +14,7 @@
 ├── 개선 및  보완 사항
 └── Q&A
 ```
+<br /> 
 
 # 프로젝트 개요 - Goal  1️⃣
 
@@ -23,6 +25,7 @@
   - Web-based AI Face Recognition Program(WebApp)
   - *Pre-Alpha Release through Build, Test and Deployment Automation by MD.Kong*
 
+<br /> 
 
 # 프로젝트 개요 - Objectives 2️⃣
 
@@ -31,6 +34,8 @@
 - ML 모델을 웹브라우저로 배포
   - 자바스크립트를 실행할 수 있는 모든 곳에서 기존 모델 실행
 
+<br /> 
+
 # 프로젝트 개발 배경 3️⃣
 
 - Python, Flask, MySOL, HTML, CSS etc.을 이용한 웹서비스를 개발 계획
@@ -38,6 +43,8 @@
 - Bootstrap5,  [OpenCV.js](https://docs.opencv.org/4.x/d5/d10/tutorial_js_root.html) , Github, gh-pages 등을 이용하여 반응형 웹앱 개발로 변경
   - OpenCV.js: Webpage, Image Processing, Object Detection, DNN Module etc.
   - All-in-One Github (No need of NPM,Registry, Firebase etc.)
+
+<br /> 
 
 # 프로젝트 상세 설명 🕵️
 
@@ -58,6 +65,8 @@
  
   - Recognition Model: [openface.nn4.small2.v1.t7](https://cmusatyalab.github.io/openface/#overview)
 
+<br /> 
+
 ## 코딩 요구사항 📈
 - AI 기술(얼굴 인식 딥러닝 모델)을 이용하여
   - DNN 모델 선정 및 준비 (Caffemodel, OpenFace etc.)
@@ -68,6 +77,8 @@
 - 기준(anchor)이 되는 얼굴과 일치할 가능성이 높은 얼굴을 구별해 낸다
   - Identification (식별), Verification (검증)
 
+
+<br /> 
 
 ## 개발에 사용된 자원들 (💠🔶Resources)
 
@@ -80,8 +91,12 @@
 | Google Drive | DB | [https://www.google.com/drive/] |
 
 
+<br /> 
+
 ## 코드 참조
   - <https://github.com/mdkong/cv_face_recog/blob/main/index.html>
+
+<br /> 
 
 ## 작업 폴더 목록
 
@@ -99,8 +114,14 @@ D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
 ~~~
 
 
+<br /> 
+
 ## 프로그램 데모
   - <https://mdkong.github.io/cv_face_recog/>
+
+<br /> 
+
+<br /> 
 
 # 추후 보완 내용 🛠️ 👷
 
@@ -113,6 +134,16 @@ D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
 - 3D 기능 구현한 라이브러리 (WebAR, WebVR 등) 활용한 앱 개발  
   
 
+
+<br /> 
+
+<br /> 
+
+<br /> 
+
+<br /> 
+
+<br /> 
 
 ---  
 
