@@ -127,7 +127,7 @@ D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
 <br /> 
 
 ## 프로그램 데모
-  - <https://mdkong.github.io/cv_face_recog/>
+  - <https://mdkong.github.io/face_recog/>
 
 <br /> 
 
