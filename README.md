@@ -59,7 +59,7 @@
 
 | Pipeline |Network | Comments |
 | :------: | ------ |------ |
-| 1 | Face Detection | 이미지에서 한 개 이상의 얼굴을 검출. BGR 이미지를 입력 받고, 얼굴이라고 생각할 수 있는 부분에  네모 박스를 그린다.  confidence를 잘 선택해야 한다. 값이 커질 수록 얼굴 아닌 다른 대상이 포함 될 가능성이 높아지고, 작아지면 얼굴 선택이 안 될 수도 있다 |
+| 1 | Face Detection | 이미지에서 한 개 이상의 얼굴을 검출. BGR 이미지를 입력 받고, 얼굴이라고 생각할 수 있는 부분에  네모 박스 (Bounding Box)를 그린다    |
 | 2 | Feature extraction | 얼굴 이미지에서 가장 중요한 특징들을 추출.  SSD framework (Single Shot MultiBox Detector)에 기초한  reduced ResNet-10 model 사용|
 | 3 | Face classification | 추출된 특징들에 기초하여 얼굴 분류. 이 네트워크는 OpenFace라고 불린다.  96 x 96 사이즈의 RGB 얼굴 이미지를 입력받아 128차원의 단위 벡터를 리턴하며 이는 단위 다차원공간에서의 한 점으로 표기한다.  이로써 두 얼굴사이의 차이는 두 출력벡터들 사이의 거리로 판단할 수 있다([Triplet Loss Function](https://tech.kakaoenterprise.com/63)) |
 
@@ -78,6 +78,7 @@
   - DNN 모델 선정 및 준비 (Caffemodel, OpenFace etc.)
   
 - 웹에서 실시간으로 카메라 영상을 입력받아 그 중에서 사람의 얼굴 부분을 추출 및 저장하고 
+  - Localization, IoU
   - Object Detection, Feature map 생성
  
 - 기준(anchor)이 되는 얼굴과 일치할 가능성이 높은 얼굴을 구별해 낸다
@@ -101,8 +102,8 @@
 <br /> 
 <br /> 
 
-## 코드 참조
-  - <https://github.com/mdkong/cv_face_recog/blob/main/index.html>
+## 소스 코드
+  - [소스코드 보기](https://github.com/mdkong/face_recognition_w_opencvjs/blob/main/index.html)
 
 <br /> 
 <br /> 
@@ -127,7 +128,7 @@ D:\GITHUB\FACE_RECOGNITION_W_OPENCVJS
 <br /> 
 
 ## 프로그램 데모
-  - <https://mdkong.github.io/cv_face_recog/>
+  - [프로그램 실행하기: Demo](https://github.com/mdkong/face_recognition_w_opencvjs/blob/main/index.html)
 
 <br /> 
 
